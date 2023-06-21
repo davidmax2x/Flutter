@@ -12,17 +12,33 @@ class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        
-        color: Colors.white,
-        child:const Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text("HELLO!")
-          ],
-        )
-        
+      backgroundColor: Colors.black,
+      body:
+      
+       Center(
+         child: 
+        Container(
+          margin: const EdgeInsets.all(70),
+            color: Colors.white,
+            child:const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text("HELLO!"),
+                SizedBox(height: 20,),
+                Divider(height: 5,),
+                TextField(
+                  keyboardType: TextInputType.name,
+                  decoration: InputDecoration(
+                    prefixIcon:Icon(Icons.person),
+                  ),
+                )
+              ],
+            )
+            
+             ),
          ),
-    );
+       ); 
+    
   }
 }
