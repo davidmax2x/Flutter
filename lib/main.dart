@@ -51,13 +51,14 @@ class WelcomePage extends StatelessWidget {
                 
                     ),
                   ),
+
                   const SizedBox(height: 20,),
+
                   const TextField(
                     obscureText: true,
                     keyboardType: TextInputType.visiblePassword,
                     decoration: InputDecoration(
-                    
-                    hintText: "PASSWORD",
+                    hintText: "PASSWORD", 
                     prefixIcon: Icon(Icons.key),
                     hintStyle: TextStyle(
                       fontWeight: FontWeight.w300
@@ -66,20 +67,24 @@ class WelcomePage extends StatelessWidget {
                     border: OutlineInputBorder()
                     ),
                   ),
+
                   const SizedBox(height: 20,),
+
                  const Align(
                     alignment: Alignment.bottomLeft,
                     child: Text("Forgot password",style: TextStyle(
-                      color: Colors.blue
+                      color: Colors.blue,
+                      fontSize: 17,
                     ),),
                   ),
-                  TextButton(onPressed: (){}, 
-                  style: const ButtonStyle(
-                    backgroundColor: MaterialStatePropertyAll(Colors.blue),
-                    
-                  ),
+                  const  SizedBox(height: 20,),
+                  MaterialButton(onPressed: (){},
+                  color: Colors.blue,
+                  minWidth: 100,
+                  
                   child: const Text("LOGIN",style: TextStyle(color: Colors.white),)),
                 const SizedBox(height: 30,),
+
                 Center(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -95,6 +100,7 @@ class WelcomePage extends StatelessWidget {
                     ],
                   ),
                 ),
+
                 const SizedBox(height: 30,),
                 
                 ],)
