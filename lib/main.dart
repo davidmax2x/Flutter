@@ -13,6 +13,8 @@ class WelcomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
+        
       backgroundColor: Colors.blue,
        body:
       
@@ -30,7 +32,8 @@ class WelcomePage extends StatelessWidget {
               Column(
                 children:  [
                   const Text("LOGIN",style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold
                   ),),
                   const SizedBox(height: 40,),
                   const TextField(
@@ -40,6 +43,7 @@ class WelcomePage extends StatelessWidget {
                     InputDecoration(
                     hintText: "USERNAME",
                     prefixIcon: Icon(Icons.person),
+                    prefixIconColor: Colors.blue,
                     hintStyle: TextStyle(
                       fontWeight: FontWeight.w300
                     ),
@@ -58,17 +62,24 @@ class WelcomePage extends StatelessWidget {
                     hintStyle: TextStyle(
                       fontWeight: FontWeight.w300
                     ),
+                    prefixIconColor: Colors.blue,
                     border: OutlineInputBorder()
                     ),
                   ),
                   const SizedBox(height: 20,),
+                 const Align(
+                    alignment: Alignment.bottomLeft,
+                    child: Text("Forgot password",style: TextStyle(
+                      color: Colors.blue
+                    ),),
+                  ),
                   TextButton(onPressed: (){}, 
                   style: const ButtonStyle(
                     backgroundColor: MaterialStatePropertyAll(Colors.blue),
                     
                   ),
                   child: const Text("LOGIN",style: TextStyle(color: Colors.white),)),
-                const SizedBox(height: 10,),
+                const SizedBox(height: 30,),
                 Center(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -78,10 +89,14 @@ class WelcomePage extends StatelessWidget {
                       InkWell(
                         onTap: (){},
                         highlightColor: Colors.red,
-                        child: const Text("Register here"),),
+                        child: const Text("Register here",style: TextStyle(
+                          color: Color.fromRGBO(25, 118, 210, 1),
+                        ),),),
                     ],
                   ),
-                )
+                ),
+                const SizedBox(height: 30,),
+                
                 ],)
               
             ),
