@@ -22,7 +22,6 @@ class WelcomePage extends StatelessWidget {
         Center(
           child: Container(
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-              
               color: Colors.white,
               ),
             padding:const EdgeInsets.fromLTRB(20,30,20,0),

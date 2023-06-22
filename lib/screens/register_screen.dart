@@ -12,10 +12,11 @@ class Register extends StatelessWidget {
          Center(
           child: 
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: 30,vertical: 50),
             padding: const EdgeInsets.fromLTRB(20, 30, 20, 10),
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
-            color: Colors.white,
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
+            color: Colors.white
+            ),
+            
             child: 
             const Column(
               mainAxisAlignment: MainAxisAlignment.center,
