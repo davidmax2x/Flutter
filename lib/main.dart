@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/register_screen.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -92,7 +93,9 @@ class WelcomePage extends StatelessWidget {
                       const Text("Already have an account?"),
                       const SizedBox(width: 10,),
                       InkWell(
-                        onTap: (){},
+                        onTap: (){
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => const Register(),));
+                        },
                         highlightColor: Colors.red,
                         child: const Text("Register here",style: TextStyle(
                           color: Color.fromRGBO(25, 118, 210, 1),
