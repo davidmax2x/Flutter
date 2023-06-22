@@ -80,8 +80,8 @@ class WelcomePage extends StatelessWidget {
                   const  SizedBox(height: 20,),
                   MaterialButton(onPressed: (){},
                   color: Colors.blue,
-                  minWidth: 100,
-                  
+                  minWidth: 170.0,
+                   
                   child: const Text("LOGIN",style: TextStyle(color: Colors.white),)),
                 const SizedBox(height: 30,),
 
