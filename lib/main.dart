@@ -37,11 +37,11 @@ class WelcomePage extends StatelessWidget {
                   ),),
                   const SizedBox(height: 40,),
                   const TextField(
-                    keyboardType: TextInputType.name,
+                    keyboardType: TextInputType.emailAddress,
                     
                     decoration: 
                     InputDecoration(
-                    hintText: "USERNAME",
+                    hintText: "Email Address",
                     prefixIcon: Icon(Icons.person),
                     prefixIconColor: Colors.blue,
                     hintStyle: TextStyle(
@@ -93,9 +93,9 @@ class WelcomePage extends StatelessWidget {
                       const SizedBox(width: 10,),
                       InkWell(
                         onTap: (){
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => const Register(),));
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => const register(),));
                         },
-                        highlightColor: Colors.red,
+                        
                         child: const Text("Register here",style: TextStyle(
                           color: Color.fromRGBO(25, 118, 210, 1),
                         ),),),
