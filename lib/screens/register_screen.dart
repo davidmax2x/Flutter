@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/main.dart';
 
@@ -26,13 +25,12 @@ class register extends StatelessWidget {
                 padding:const EdgeInsets.all(25),
                 margin: const EdgeInsets.all(20),
                 
-                
-                
                 child: 
                  Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const SizedBox(height: 20,),
+                    
                    const TextField(
                       keyboardType: TextInputType.name,
                       decoration: InputDecoration(
